@@ -1,11 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-
-body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  --font-color: black;
+  --primary-color: aliceblue;
+  --bg-color: white;
+}
+body {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 15px;
 }
-
+.theme-dark {
+  --font-color: white;
+  --primary-color: rgb(51, 51, 51);
+  --bg-color: rgb(39, 39, 39);
+}

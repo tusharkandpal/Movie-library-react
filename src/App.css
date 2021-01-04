@@ -1,18 +1,44 @@
-.App-header{
+.App {
+  color: var(--font-color);
+  background-color: var(--bg-color);
+}
+.App-header {
   display: flex;
   padding: 10px;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
-#search{
+#search {
   outline: none;
   border: none;
-  background-color: aliceblue;
+  background-color: var(--primary-color);
+  color: var(--font-color);
   padding: 10px;
   border-radius: 15px;
 }
-#movies-container{
+#theme {
+  outline: none;
+  border: 0;
+  background-color: var(--primary-color);
+  width: 50px;
+  cursor: pointer;
+}
+#theme::before {
+  content: "🌙";
+}
+
+.theme-dark #theme::before {
+  content: "☀️";
+}
+#movies-container {
   display: flex;
+  min-height: 80vh;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  #null_img {
+    width: 150px;
+  }
 }

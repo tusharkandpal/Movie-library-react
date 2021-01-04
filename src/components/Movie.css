@@ -1,41 +1,57 @@
-.movie-box{
-    max-width: 230px;
-    margin: 20px;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.5s ease-in-out;
-    border-radius: 5px;
+.movie-box {
+  max-width: 230px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 5px;
 }
-.movie-img{
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
+.movie-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
 }
-.movie-info{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    background-color:rgb(225, 241, 255);
+.movie-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: var(--primary-color);
 }
-.movie-title{
-    width: 150px;
+.movie-title {
+  width: 150px;
 }
 .overview {
-    font-size: 0.9rem;
-    background-color: #fff;
-    position: absolute;
-    bottom: 0;
-    padding: 10px;
-    transform: translateY(100%);
-    transition: transform 0.3s ease-in-out;
-    max-height: 100%;
-    overflow: auto;
+  font-size: 0.9rem;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  max-height: 100%;
+  overflow: auto;
 }
-.movie-box:hover{
-    box-shadow: 2px 2px 5px rgb(91, 151, 204);
-    transform: scale(1.1);
+.overview-title {
+  padding: 10px 0;
 }
-.movie-box:hover .overview{
-    transform: translateY(0%);
+.movie-box:hover {
+  box-shadow: 0 0 10px var(--font-color);
+  transform: scale(1.05);
 }
+.movie-box:hover .overview {
+  transform: translateY(0%);
+}
+@media screen and (max-width: 600px) {
+    .movie-box{
+        max-width: 150px;
+        margin: 15px;
+    }
+    .movie-img {
+        height: 220px;
+    }
+    .overview {
+        font-size: 0.8rem;
+    }
+  }
+  
