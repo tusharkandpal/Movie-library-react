@@ -1,3 +1,18 @@
-.App {
-  text-align: center;
+.App-header{
+  display: flex;
+  padding: 10px;
+  justify-content: flex-end;
+}
+#search{
+  outline: none;
+  border: none;
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 15px;
+}
+#movies-container{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
