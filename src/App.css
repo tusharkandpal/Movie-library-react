@@ -31,7 +31,7 @@
 }
 #movies-container {
   display: flex;
-  height: 92.5vh;
+  min-height: 92.5vh;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
