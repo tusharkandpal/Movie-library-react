@@ -42,8 +42,8 @@ function App() {
   };
 
   const handleClick = () => {
-    const app = document.querySelector(".App");
-    app.classList.toggle("theme-dark");
+    const body = document.querySelector("body");
+    body.classList.toggle("theme-dark");
   };
 
   return (

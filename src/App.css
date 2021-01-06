@@ -31,14 +31,12 @@
 }
 #movies-container {
   display: flex;
-  min-height: 80vh;
+  height: 92.5vh;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
-  #null_img {
-    width: 150px;
-  }
+#null_img {
+  width: 40vh;
 }
