@@ -19,10 +19,9 @@ function App() {
       .then((res) => res.json())
       .then((data) => {
         setMovies(data.results);
+        setIsLoading(false);
       })
       .catch((err) => console.log(err));
-
-    setIsLoading(false);
   };
 
   useEffect(() => {
